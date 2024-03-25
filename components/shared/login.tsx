@@ -3,6 +3,7 @@ import Image from "next/image";
 import {Button} from "@/components/ui/button";
 import {FcGoogle} from "react-icons/fc";
 import {FaGithub} from "react-icons/fa6";
+import {signIn} from "next-auth/react";
 
 const Login = () => {
 
@@ -25,7 +26,9 @@ const Login = () => {
                         Sign in with Google
                     </Button>
                     <Button
-                        className={"mt-3 flex items-center gap-4 w-full h-[56px] bg-green-600 !text-white hover:bg-green-500"}>
+                        className={"mt-3 flex items-center gap-4 w-full h-[56px] bg-green-600 !text-white hover:bg-green-500"}
+                        onClick={() => signIn("github")}
+                    >
                         <FaGithub className={"w-7 h-7"}/>
                         Sign in with Github
                     </Button>

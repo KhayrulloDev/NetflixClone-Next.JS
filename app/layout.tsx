@@ -12,8 +12,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-    title: "Netflix Clone ",
-    description: "Netflix Clone with Next.js",
+    title: "KhayrulloDev Blogs",
+    description: "KhayrulloDev Blogs documentation for developers"
 };
 
 
